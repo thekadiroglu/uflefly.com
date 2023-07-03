@@ -1,0 +1,140 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F0E9D2;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+h1 {
+    color: #181D31;
+    font-size: xx-large;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    color: #181D31;
+}
+
+a {
+    text-decoration: none;
+    color: #181D31;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+    font-size: large;
+    padding: 7px 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 5px;
+    border: 2px;
+    background-color: #181D31;
+    color: #E6DDC4;
+    transition: 1s ease;
+}
+
+.btn:hover {
+    background-color: #F0E9D2;
+    /* border: 7px; */
+    /* border-color: #181D31; */
+    color: #181D31;
+    transition: 0s ease;
+    box-shadow: 0 0 0 1px #181D31;
+}
+
+img {
+    transition: 1s ease;
+}
+
+img:hover {
+    box-shadow: 0 0 0 1px #181D31;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.gridbox {
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr 3fr 1fr
+    
+}
+
+/* .gridbox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .item1 {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .item2 {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+  .item3 {
+    grid-column: 1;
+    grid-row: 2 / 5;
+  }
+  .item4 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+  .item5 {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .item6 {
+    grid-column: 3;
+    grid-row: 4;
+  } */
